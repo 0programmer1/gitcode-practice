@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <style>
+        *,*::before,*::after{
+            box-sizing: border-box;
+        }
+        body{
+            font-family: 'Poppins', sans-serif;
+            background-color: aliceblue;
+        }
+        form{
+            border: 2px solid #caffbf;
+            border-radius: 3px;
+            margin: 150px;
+        }
+        h1{
+            letter-spacing: 3px;
+            color: blue;
+        }
+    </style>
+</head>
+<body>
+    <form>
+        <div class="login-cintainer">
+            <center><h1>Student Login Form</h1></center>
+            <div id="username">
+                <input type="text" id="username" placeholder="Enter Username" required>
+            </div>
+            <div id="password">
+                <input type="text" id="password" placeholder="Enter Password" required>
+            </div>
+            <div id="remember">
+                <input type="checkbox" checked="checked">Remember me
+            </div>
+            <div id="forgotPass">
+                <a href="#">Forgot password</a>
+            </div>
+            <div id="createAcc">
+                <label>Don't have an account?</label>
+            </div>
+            <a href="#" id="signup">SignUp Here</a>
+            <div id="submit">
+                <button type="submit">Login</button>
+            </div>
+        </div>
+    </form>
+    
+</body>
+</html>

@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!--<link rel="stylesheet" href="style.css">-->
+    <style>
+        *,*::before,*::after{
+            box-sizing: border-box;
+        }
+        body{
+            font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+            background-color: aquamarine;
+        }
+        .Login-container{
+            text-align: center;
+            justify-items: center;
+            justify-content: space-between;
+            padding: 10px;
+            background-color: #caffbf;
+        }
+        .hyperlink-pass{
+            text-align: left;
+            padding: 10px;
+            padding-bottom: 10px;
+        }
+        .submit{
+            text-align: center;
+           
+        }
+        button[type="submit"]{
+            width: 300px;
+            margin: 25px;
+            padding: 10px;
+            letter-spacing: 10px;
+            border: 2px solid #000;
+            cursor: pointer;
+            text-transform: uppercase;
+            border-radius: 55px;
+        }
+        form{
+            border: 2px solid rgba(red, green, blue, alpha);
+            padding: 10px;
+            margin: 80px;
+        }
+        h1{
+            color: blue;
+            letter-spacing: 6px;
+            font-size: 3rem;
+        }
+        #username{
+            width: 100%;
+            margin: 0px;
+            padding: 8px;
+            display: inline-block;
+        }
+        #password{
+            width: 100%;
+            margin: 0px;
+            padding: 8px;
+            display: inline-block;
+        }
+        #remember{
+            padding: 0px;
+            text-align: left;
+            cursor: pointer;
+        }
+        .hyperlink-1{
+            text-align: center;
+            text-decoration: underline;
+            color: #000;
+        }
+    </style>
+</head>
+<body>
+    <form>
+       
+            <div class="Login-container">
+                <center><h1>Login Form</h1></center>
+                <div id="username">
+                 <!---<label id="Username">Username:</label>----> 
+                <input type="text" id="username" placeholder="Enter Username">
+                </div>
+
+                <div id="password">
+                 <!------ <label id="Password">Password:</label>--------->
+                <input type="text" id="password" placeholder="Enter Password">
+                </div>
+
+                <div id="remember">
+                    <input type="checkbox" id="remember" checked="checked"> Remeber Me
+                </div>
+                <div class="hyperlink-pass">
+                    <a href="#forgotPass">Forgot password</a>
+                </div>
+                <div class="hyperlink-1">
+                    <label>Don't have an account?</label>
+                </div>
+                <div class="hyperlink-signUp">
+                    <a href="#accCreate">SignUp Here</a>
+                </div>
+                <div class="submit">
+                    <button type="submit" id="save">Submit</button>
+                </div>
+            </div>
+
+        </form>
+      
+
+    <script src="index.js"></script>
+</body>
+</html>
